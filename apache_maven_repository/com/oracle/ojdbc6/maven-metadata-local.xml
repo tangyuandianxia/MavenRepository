@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>com.oracle</groupId>
+  <artifactId>ojdbc6</artifactId>
+  <versioning>
+    <release>12.1.0.1-atlassian-hosted</release>
+    <versions>
+      <version>12.1.0.1-atlassian-hosted</version>
+    </versions>
+    <lastUpdated>20170825034532</lastUpdated>
+  </versioning>
+</metadata>

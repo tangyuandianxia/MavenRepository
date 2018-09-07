@@ -1,0 +1,11 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Fri May 18 13:38:41 CST 2018
+http\://ws.zones.apache.org/repository2/.error=Could not transfer artifact org.apache.geronimo.specs\:geronimo-jta_1.1_spec\:jar\:1.1 from/to apache-ws-snapshots2 (http\://ws.zones.apache.org/repository2)\: Connect to ws.zones.apache.org\:80 [ws.zones.apache.org/123.129.254.12, ws.zones.apache.org/123.129.254.13, ws.zones.apache.org/123.129.254.14, ws.zones.apache.org/123.129.254.15] failed\: Connection timed out\: connect
+@legacy-java.net-https\://maven-repository.dev.java.net/nonav/repository/.lastUpdated=1525419213562
+@default-apache-ws-snapshots2-http\://ws.zones.apache.org/repository2/.lastUpdated=1525419212365
+http\://repo1.maven.org/eclipse/.error=
+http\://tomcat.apache.org/dev/dist/m2-repository/.error=
+http\://repo1.maven.org/eclipse/.lastUpdated=1525419213556
+https\://repo.maven.apache.org/maven2/.lastUpdated=1526621921880
+https\://maven-repository.dev.java.net/nonav/repository/.error=Could not transfer artifact org.apache.geronimo.specs\:geronimo-jta_1.1_spec\:jar\:1.1 from/to java.net (https\://maven-repository.dev.java.net/nonav/repository/)\: Cannot access https\://maven-repository.dev.java.net/nonav/repository/ with type legacy using the available connector factories\: BasicRepositoryConnectorFactory
+http\://tomcat.apache.org/dev/dist/m2-repository/.lastUpdated=1525419213110

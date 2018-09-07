@@ -1,0 +1,4 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Tue Oct 10 15:50:25 CST 2017
+@default-central-https\://repo.maven.apache.org/maven2/.lastUpdated=1507621825535
+https\://repo.maven.apache.org/maven2/.error=Could not transfer artifact org.springframework.boot\:spring-boot-starter-redis\:pom\:unknown from/to central (https\://repo.maven.apache.org/maven2)\: Connect to repo.maven.apache.org\:443 [repo.maven.apache.org/151.101.24.215] failed\: Connection timed out\: connect

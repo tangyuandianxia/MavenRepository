@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.hynnet</groupId>
+	<artifactId>hynnet</artifactId>
+
+	<properties>
+		<junit.version>4.11</junit.version>
+		<gpg.skip>false</gpg.skip>
+		<gpg.keyname>hynnet.com</gpg.keyname>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<java.bootstrap.classes>${java.home}/lib/rt.jar</java.bootstrap.classes>
+		<java.cryptographic.extension.classes>${java.home}/lib/jce.jar</java.cryptographic.extension.classes>
+		<java.secure.socket.extension.classes>${java.home}/lib/jsse.jar</java.secure.socket.extension.classes>
+<!--
+		<project.version>1.0.0-SNAPSHOT</project.version>
+-->
+		<project.version>1.0.7</project.version>
+	</properties>
+
+	<version>1.0.7</version>
+	<packaging>pom</packaging>
+
+	<name>hynnet</name>
+	<description>hynnet API written in Java</description>
+	<url>http://maven.hynnet.com</url>
+
+	<developers>
+		<developer>
+			<id>hynnet.com</id>
+			<name>hynnet.com</name>
+			<email>hynnet@hynnet.com</email>
+		</developer>
+	</developers>
+
+	<scm>
+		<url>https://github.com/hynnet/httpclient-util.git</url>
+		<connection>scm:git:https://github.com/hynnet/httpclient-util.git</connection>
+	</scm>
+
+	<licenses>
+		<license>
+			<name>hynnet.com</name>
+			<url>http://www.hynnet.com/licenses/LICENSE-1.0.txt</url>
+			<distribution>repo</distribution>
+			<comments>A business-friendly OSS license</comments>
+		</license>
+	</licenses>
+
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>3.8.1</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>1.7.7</version>
+			<scope>compile</scope>
+		</dependency>
+	</dependencies>
+	<modules>
+		<module>hynnet-util</module>
+		<module>hynnet-appframework-util</module>
+		<module>hynnet-appframework</module>
+		<module>hynnet-model</module>
+		<module>hynnet-coreapp</module>
+		<module>hynnet-tools-ros</module>
+		<module>hynnet-webplugin</module>
+		<module>hynnet-wx</module>
+		<module>hynnet-tools</module>
+		<module>hynnet-server</module>
+<!--
+-->
+  </modules>
+
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-gpg-plugin</artifactId>
+				<configuration>
+					<skip>${gpg.skip}</skip>
+				</configuration>
+				<executions>
+					<execution>
+						<id>sign-artifacts</id>
+						<phase>verify</phase>
+						<goals>
+							<goal>sign</goal>
+						</goals>
+						<configuration>
+							<keyname>${gpg.keyname}</keyname>
+							<passphraseServerId>${gpg.keyname}</passphraseServerId>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+	<distributionManagement>
+		<repository>
+			<id>sonatype-hynnet-releases</id>
+			<name>sonatype Release Repository</name>
+			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
+		</repository>
+		<snapshotRepository>
+			<id>sonatype-hynnet-snapshots</id>
+			<name>sonatype Snapshot Repository</name>
+			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
+		</snapshotRepository>
+	</distributionManagement>
+
+</project>

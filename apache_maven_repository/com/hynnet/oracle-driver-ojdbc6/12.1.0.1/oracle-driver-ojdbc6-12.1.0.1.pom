@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.hynnet</groupId>
+		<artifactId>hynnet</artifactId>
+		<version>1.0.7</version>
+	</parent>
+	<groupId>com.hynnet</groupId>
+	<artifactId>oracle-driver-ojdbc6</artifactId>
+	<version>12.1.0.1</version>
+	<name>Oracle JDBC Driver for java oracle.jdbc.driver.OracleDriver ojdbc6</name>
+	<url>http://maven.hynnet.com</url>
+	<properties>
+		<junit.version>4.11</junit.version>
+		<gpg.skip>false</gpg.skip>
+		<gpg.keyname>hynnet.com</gpg.keyname>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<java.bootstrap.classes>${java.home}/lib/rt.jar</java.bootstrap.classes>
+		<java.cryptographic.extension.classes>${java.home}/lib/jce.jar</java.cryptographic.extension.classes>
+		<jdk.version>1.5</jdk.version>
+		<java.secure.socket.extension.classes>${java.home}/lib/jsse.jar</java.secure.socket.extension.classes>
+	</properties>
+
+	<developers>
+		<developer>
+			<id>oracle.com</id>
+			<name>oracle.com</name>
+			<email>oracle@hynnet.com</email>
+		</developer>
+	</developers>
+
+	<scm>
+		<url>https://github.com/oracle</url>
+		<connection>scm:git:https://github.com/oracle</connection>
+	</scm>
+
+	<licenses>
+		<license>
+			<name>hynnet.com</name>
+			<url>http://www.hynnet.com/licenses/LICENSE-1.0.txt</url>
+			<distribution>repo</distribution>
+			<comments>A business-friendly OSS license</comments>
+		</license>
+	</licenses>
+
+	<dependencies>
+	</dependencies>
+	<distributionManagement>
+		<repository>
+			<id>sonatype-hynnet-releases</id>
+			<name>sonatype Release Repository</name>
+			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
+		</repository>
+		<snapshotRepository>
+			<id>sonatype-hynnet-snapshots</id>
+			<name>sonatype Snapshot Repository</name>
+			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
+		</snapshotRepository>
+	</distributionManagement>
+</project>
